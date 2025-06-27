@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Para Tube</title>
+</head>
+<body class="relative bg-white">
+  <!-- Header: fixed, glassy, on top of hero -->
+  <header class="fixed top-0 left-0 w-full z-20 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+      <a class="block text-[#14b8a6]" href="#">
+        <span class="sr-only">Home</span>
+        <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.41 10.3847C1.14777 7.4194 2.85643 4.7861 5.2639 2.90424C7.6714 1.02234 10.6393 0 13.695 0C16.7507 0 19.7186 1.02234 22.1261 2.90424C24.5336 4.7861 26.2422 7.4194 26.98 10.3847H25.78C23.7557 10.3549 21.7729 10.9599 20.11 12.1147C20.014 12.1842 19.9138 12.2477 19.81 12.3047H19.67C19.5662 12.2477 19.466 12.1842 19.37 12.1147C17.6924 10.9866 15.7166 10.3841 13.695 10.3841C11.6734 10.3841 9.6976 10.9866 8.02 12.1147C7.924 12.1842 7.8238 12.2477 7.72 12.3047H7.58C7.4762 12.2477 7.376 12.1842 7.28 12.1147C5.6171 10.9599 3.6343 10.3549 1.61 10.3847H0.41ZM23.62 16.6547C24.236 16.175 24.9995 15.924 25.78 15.9447H27.39V12.7347H25.78C24.4052 12.7181 23.0619 13.146 21.95 13.9547C21.3243 14.416 20.5674 14.6649 19.79 14.6649C19.0126 14.6649 18.2557 14.416 17.63 13.9547C16.4899 13.1611 15.1341 12.7356 13.745 12.7356C12.3559 12.7356 11.0001 13.1611 9.86 13.9547C9.2343 14.416 8.4774 14.6649 7.7 14.6649C6.9226 14.6649 6.1657 14.416 5.54 13.9547C4.4144 13.1356 3.0518 12.7072 1.66 12.7347H0V15.9447H1.61C2.39051 15.924 3.154 16.175 3.77 16.6547C4.908 17.4489 6.2623 17.8747 7.65 17.8747C9.0377 17.8747 10.392 17.4489 11.53 16.6547C12.1468 16.1765 12.9097 15.9257 13.69 15.9447C14.4708 15.9223 15.2348 16.1735 15.85 16.6547C16.9901 17.4484 18.3459 17.8738 19.735 17.8738C21.1241 17.8738 22.4799 17.4484 23.62 16.6547ZM23.62 22.3947C24.236 21.915 24.9995 21.664 25.78 21.6847H27.39V18.4747H25.78C24.4052 18.4581 23.0619 18.886 21.95 19.6947C21.3243 20.156 20.5674 20.4049 19.79 20.4049C19.0126 20.4049 18.2557 20.156 17.63 19.6947C16.4899 18.9011 15.1341 18.4757 13.745 18.4757C12.3559 18.4757 11.0001 18.9011 9.86 19.6947C9.2343 20.156 8.4774 20.4049 7.7 20.4049C6.9226 20.4049 6.1657 20.156 5.54 19.6947C4.4144 18.8757 3.0518 18.4472 1.66 18.4747H0V21.6847H1.61C2.39051 21.664 3.154 21.915 3.77 22.3947C4.908 23.1889 6.2623 23.6147 7.65 23.6147C9.0377 23.6147 10.392 23.1889 11.53 22.3947C12.1468 21.9165 12.9097 21.6657 13.69 21.6847C14.4708 21.6623 15.2348 21.9135 15.85 22.3947C16.9901 23.1884 18.3459 23.6138 19.735 23.6138C21.1241 23.6138 22.4799 23.1884 23.62 22.3947Z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+
+      <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Global" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-lg">
+            <li>
+              <a class="text-[#14b8a6] font-bold transition hover:text-[#0f766e]" href="#">Para Tube</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="block rounded-md bg-[#14b8a6] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#0f766e]"
+              href="tel:+18555019859"
+            >
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative h-screen flex flex-col items-center justify-center text-center text-[#14b8a6] py-0 px-3 bg-white">
+    <div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden">
+      <video class="min-w-full min-h-full absolute object-cover" src="hero1.mp4" type="video/mp4" autoplay muted loop></video>
+    </div>
+    <div class="video-content space-y-2 z-10 relative">
+      <h1 class="font-bold text-6xl drop-shadow-lg">Fast Cable & Internet</h1>
+      <h3 class="font-light text-3xl text-[#0f766e]">Reliable. Affordable. Connected.
+        (855) 501-9859
+<br>
+        <a href="tel:+18555019859" class="inline-block mt-4 px-6 py-3 bg-[#14b8a6] text-white font-semibold rounded-lg shadow hover:bg-[#0f766e] transition">
+          Call now For Offers
+        </a>
+      </h3>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="max-w-screen-md mb-8 lg:mb-16">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-[#14b8a6]">Our Cable & Internet Services</h2>
+        <p class="text-gray-600 sm:text-xl">Para Tube delivers high-speed internet and reliable cable TV solutions for homes and businesses. Experience seamless streaming, crystal-clear calls, and uninterrupted connectivity with our tailored packages.</p>
+      </div>
+      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div>
+          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#99f6e4] lg:h-12 lg:w-12">
+            <svg class="w-5 h-5 text-[#14b8a6] lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold text-[#14b8a6]">High-Speed Internet</h3>
+          <p class="text-gray-600">Enjoy blazing-fast internet speeds for streaming, gaming, and working from home. Choose from flexible plans to fit your needs.</p>
+        </div>
+        <div>
+          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#99f6e4] lg:h-12 lg:w-12">
+            <svg class="w-5 h-5 text-[#14b8a6] lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold text-[#14b8a6]">Cable TV Packages</h3>
+          <p class="text-gray-600">Access hundreds of HD channels, live sports, movies, and kids’ entertainment. Customize your channel lineup to suit your family.</p>
+        </div>
+        <div>
+          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#99f6e4] lg:h-12 lg:w-12">
+            <svg class="w-5 h-5 text-[#14b8a6] lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>                    
+          </div>
+          <h3 class="mb-2 text-xl font-bold text-[#14b8a6]">Home Phone Service</h3>
+          <p class="text-gray-600">Stay connected with unlimited local and long-distance calling, plus advanced voicemail and call forwarding features.</p>
+        </div>
+        <div>
+          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#99f6e4] lg:h-12 lg:w-12">
+            <svg class="w-5 h-5 text-[#14b8a6] lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold text-[#14b8a6]">Business Solutions</h3>
+          <p class="text-gray-600">Empower your business with dedicated internet, secure networking, and scalable cable TV options for offices, hotels, and more.</p>
+        </div>
+        <div>
+          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#99f6e4] lg:h-12 lg:w-12">
+            <svg class="w-5 h-5 text-[#14b8a6] lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold text-[#14b8a6]">Wi-Fi & Smart Home</h3>
+          <p class="text-gray-600">Get whole-home Wi-Fi coverage and connect your smart devices for security, automation, and convenience.</p>
+        </div>
+        <div>
+          <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-[#99f6e4] lg:h-12 lg:w-12">
+            <svg class="w-5 h-5 text-[#14b8a6] lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+          </div>
+          <h3 class="mb-2 text-xl font-bold text-[#14b8a6]">24/7 Customer Support</h3>
+          <p class="text-gray-600">Our expert team is available around the clock to assist with installation, troubleshooting, and account management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 relative">
+    <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+      <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+        <div class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+          <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+            <img class="rounded-xl object-cover w-full h-80 sm:h-96 lg:h-[28rem]" src="2.webp" alt="Fast Internet" />
+          </div>
+          <img class="sm:ml-0 ml-auto rounded-xl object-cover w-full h-80 sm:h-96 lg:h-[28rem]" src="3.webp" alt="Reliable Cable TV" />
+        </div>
+        <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+          <div class="w-full flex-col justify-center items-start gap-8 flex">
+            <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+              <h2 class="text-[#14b8a6] text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                Connecting You to What Matters Most
+              </h2>
+              <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                Experience ultra-fast internet and crystal-clear cable TV for your home or business. Our team is dedicated to keeping you connected with reliable service, affordable plans, and friendly support—so you can stream, work, and play without limits.
+              </p>
+            </div>
+            <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+              <div class="flex-col justify-start items-start inline-flex">
+                <h3 class="text-[#14b8a6] text-4xl font-bold font-manrope leading-normal">99%</h3>
+                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Network Reliability</h6>
+              </div>
+              <div class="flex-col justify-start items-start inline-flex">
+                <h4 class="text-[#14b8a6] text-4xl font-bold font-manrope leading-normal">24/7</h4>
+                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Customer Support</h6>
+              </div>
+              <div class="flex-col justify-start items-start inline-flex">
+                <h4 class="text-[#14b8a6] text-4xl font-bold font-manrope leading-normal">1000+</h4>
+                <h6 class="text-gray-500 text-base font-normal leading-relaxed">Happy Customers</h6>
+              </div>
+            </div>
+          </div>
+          <a href="tel:+18555019859"
+            class="sm:w-fit w-full px-3.5 py-2 bg-[#14b8a6] hover:bg-[#0f766e] transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex text-white text-sm font-medium leading-6">
+            Call Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+                                                <section class="py-24">
+                                                  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-lg mx-auto md:max-w-2xl lg:max-w-full">
+                  <div class="relative w-full h-auto md:col-span-2">
+                    <div class="bg-gray-800 rounded-2xl flex justify-between flex-row flex-wrap overflow-hidden">
+                      <div class="relative w-full h-64 md:h-auto md:w-full block">
+                        <img src="1.jpg" alt="Header Section" class="w-full h-full object-cover rounded-2xl">
+                      </div>
+                    </div>
+                  </div>
+                    <div class="relative w-full h-auto">
+                    <div class="bg-[#14b8a6] rounded-2xl p-5 xl:p-8 h-full">
+                      <div class="block">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"></svg>
+                        <path d="M24.6429 11.4286C24.6429 14.3872 20.2457 16.7857 14.8214 16.7857C9.3972 16.7857 5 14.3872 5 11.4286M24.6429 16.7857C24.6429 19.7444 20.2457 22.1429 14.8214 22.1429C9.3972 22.1429 5 19.7444 5 16.7857M24.6429 22.1429C24.6429 25.1015 20.2457 27.5 14.8214 27.5C9.3972 27.5 5 25.1015 5 22.1429M24.6429 6.96429C24.6429 9.42984 20.2457 11.4286 14.8214 11.4286C9.3972 11.4286 5 9.42984 5 6.96429C5 4.49873 9.3972 2.5 14.8214 2.5C20.2457 2.5 24.6429 4.49873 24.6429 6.96429Z" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                      </div>
+                      <h3 class="py-5 text-white text-lg font-bold xl:text-xl">Get Fast Internet & Cable Today</h3>
+                      <p class="text-xs font-normal text-white mb-8">Upgrade your home or business with reliable, high-speed connectivity and top-notch support.</p>
+                      <a href="tel:+18555019859" class="py-2 px-5 border border-solid border-white rounded-full gap-2 text-xs text-white font-semibold flex items-center justify-between transition-all duration-500 hover:bg-white/10">
+                      Call Now
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      </a>
+                    </div>
+                    </div>
+                    <div class="relative w-full h-auto">
+                    <div class="bg-[#14b8a6] rounded-2xl p-5 xl:p-8 h-full">
+                      <div class="block">
+                      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M26.7301 15.661C26.7301 22.1995 21.306 27.5 14.6151 27.5C7.9241 27.5 2.5 22.1995 2.5 15.661C2.5 9.1225 7.9241 3.822 14.6151 3.822M18.1313 10.1507L18.1313 4.85383C18.1313 3.22503 19.6455 2.00299 21.1519 2.70013C23.7608 3.90751 26.6177 6.25557 27.456 10.2563C27.7542 11.6798 26.4931 12.8563 25.0064 12.8368L20.7873 12.7814C19.3147 12.762 18.1313 11.5899 18.1313 10.1507Z" stroke="white" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                      </div>
+                      <h3 class="py-5 text-white text-lg font-bold xl:text-xl">Talk to a Specialist</h3>
+                      <p class="text-xs font-normal text-white mb-8">Have questions? Our experts are ready to help you choose the best plan for your needs.</p>
+                      <a href="tel:+18555019859" class="py-2 px-5 border border-solid border-white rounded-full gap-2 text-xs text-white font-semibold flex items-center justify-between transition-all duration-500 hover:bg-white/10">
+                      Call +1 (855) 501-9859
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 9L3.58579 6.41421C4.25245 5.74755 4.58579 5.41421 4.58579 5C4.58579 4.58579 4.25245 4.25245 3.58579 3.58579L1 1" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      </a>
+                    </div>
+                    </div>
+              </div>
+        </div>
+    </section>
+    <!-- FAQ Section - Redesigned -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-lg shadow-xl py-12 px-4 md:px-12">
+          <h4 class="text-4xl font-bold text-[#14b8a6] tracking-widest uppercase text-center">FAQ</h4>
+          <p class="text-center text-[#14b8a6] text-sm mt-2">Here are some of the frequently asked questions</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <!-- FAQ 1 -->
+            <div class="flex items-start space-x-6">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#14b8a6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#14b8a6] mb-2">What services does Paratube offer?</h4>
+                <p class="text-[#14b8a6]">
+                  Paratube provides a range of connectivity solutions including high-speed internet, cellular plans, bundled packages, and streaming services. As a certified JNA dealer, we offer services from top providers, ensuring you have access to the best options for your home or business.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="flex items-start space-x-6">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#14b8a6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#14b8a6] mb-2">What companies are serviceable through Paratube and JNA?</h4>
+                <p class="text-gray-600">
+                  As a certified JNA dealer, Paratube offers services from leading companies, including:<br>
+                  Paramount+<br>
+                  SHOWTIME®<br>
+                  AT&amp;T<br>
+                  Verizon<br>
+                  Spectrum<br>
+                  Comcast Xfinity<br>
+                  Frontier<br>
+                  HughesNet<br>
+                  CenturyLink<br>
+                  ...and many more.<br>
+                  Through our partnerships, we ensure you have access to reliable and diverse service options.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="flex items-start space-x-6">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#14b8a6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#14b8a6] mb-2">Is Paratube a service provider?</h4>
+                <p class="text-gray-600">
+                  Paratube is an authorized dealer and certified retailer, but we are not a direct service provider. We work with leading service providers like those listed above to connect you to their offerings, ensuring you receive the best possible service.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="flex items-start space-x-6">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#14b8a6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#14b8a6] mb-2">What are Paratube's execution charges?</h4>
+                <p class="text-gray-600">
+                  Paratube charges for its execution services, which include setting up new connections, processing bill payments, plan upgrades, account cancellations, and other administrative tasks. These charges range from $49.99 to $199.99, depending on the service request, and are separate from the billing charges of the service providers you’re signed up with.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="flex items-start space-x-6">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#14b8a6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#14b8a6] mb-2">Why are Paratube’s execution charges separate from my service provider’s billing?</h4>
+                <p class="text-gray-600">
+                  As a separate entity, Paratube handles the execution of your service requests independently. Our charges cover the work required to manage and complete requests like plan upgrades, new installations, or account changes. These execution fees are distinct from your provider’s billing, which covers your actual internet, cellular, or streaming service.
+                </p>
+              </div>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="flex items-start space-x-6">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#14b8a6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-[#14b8a6] mb-2">How do I contact Paratube for support?</h4>
+                <p class="text-gray-600">
+                  You can reach out to our customer support team through the contact form on our website or by calling us directly on the assistance number provided below. Our team is available to assist you with any inquiries, service requests, or troubleshooting needs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-24">
+        <div class="flex items-center lg:mb-0 mb-10">
+          <div>
+            <h4 class="text-[#14b8a6] text-base font-medium leading-6 mb-4 lg:text-left text-center">Contact Us</h4>
+            <h2 class="text-gray-900 font-manrope text-4xl font-semibold leading-10 mb-9 lg:text-left text-center">Reach Out To Para Tube</h2>
+            <form action="">
+              <input type="text" class="w-full h-14 shadow-sm text-gray-600 placeholder-text-400 text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none py-2 px-4 mb-8" placeholder="Name">
+              <input type="email" class="w-full h-14 shadow-sm text-gray-600 placeholder-text-400 text-lg font-normal leading-7 rounded-full border border-gray-200 focus:outline-none py-2 px-4 mb-8" placeholder="Email">
+              <textarea name="" id="text" class="w-full h-48 shadow-sm resize-none text-gray-600 placeholder-text-400 text-lg font-normal leading-7 rounded-2xl border border-gray-200 focus:outline-none px-4 py-4 mb-8" placeholder="Phone"></textarea>
+              <button class="w-full h-12 text-center text-white text-base font-semibold leading-6 rounded-full bg-[#14b8a6] shadow transition-all duration-700 hover:bg-[#0f766e]">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="lg:max-w-xl w-full h-[600px] flex items-center justify-center bg-cover bg-no-repeat bg-[url('1.jpg')]">
+          <div>
+            <div class="lg:w-96 w-auto h-auto bg-white shadow-xl lg:p-6 p-4">
+              <svg width="164" height="33" viewBox="0 0 164 33" fill="none" xmlns="http://www.w3.org/2000/svg" class="mb-6 mx-auto">
+                <!-- (SVG paths remain unchanged) -->
+              </svg>
+              <a href="tel:+18555019859" class="flex items-center mb-6">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22.3092 18.3098C22.0157 18.198 21.8689 18.1421 21.7145 18.1287C21.56 18.1154 21.4058 18.1453 21.0975 18.205L17.8126 18.8416C17.4392 18.9139 17.2525 18.9501 17.0616 18.9206C16.8707 18.891 16.7141 18.8058 16.4008 18.6353C13.8644 17.2551 12.1853 15.6617 11.1192 13.3695C10.9964 13.1055 10.935 12.9735 10.9133 12.8017C10.8917 12.6298 10.9218 12.4684 10.982 12.1456L11.6196 8.72559C11.6759 8.42342 11.7041 8.27233 11.6908 8.12115C11.6775 7.96998 11.6234 7.82612 11.5153 7.5384L10.6314 5.18758C10.37 4.49217 10.2392 4.14447 9.95437 3.94723C9.6695 3.75 9.29804 3.75 8.5551 3.75H5.85778C4.58478 3.75 3.58264 4.8018 3.77336 6.06012C4.24735 9.20085 5.64674 14.8966 9.73544 18.9853C14.0295 23.2794 20.2151 25.1426 23.6187 25.884C24.9335 26.1696 26.0993 25.1448 26.0993 23.7985V21.2824C26.0993 20.5428 26.0993 20.173 25.9034 19.8888C25.7076 19.6046 25.362 19.4729 24.6708 19.2096L22.3092 18.3098Z" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <h5 class="text-[#14b8a6] text-base font-normal leading-6 ml-5">+1 (855) 501-9859</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+    <section class="bg-gray-50 py-12">
+      <div class="max-w-3xl mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold text-[#14b8a6] mb-4 text-center">Disclaimer</h2>
+        <p class="text-gray-700 text-base leading-relaxed text-center"></p>
+          The information provided on this website is for general informational purposes only. Paratube makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information, products, or services contained on this website. Any reliance you place on such information is therefore strictly at your own risk.
+        </p>
+      </div>
+    </section>
+
+
+
+<!-- component -->
+<footer class="bg-white border-t border-gray-200 mt-12">
+  <div class="container mx-auto px-4 py-12 flex flex-col items-center">
+    <nav class="flex flex-wrap justify-center gap-6 text-gray-600 text-base mb-6">
+      <a href="#about" class="hover:text-[#14b8a6] transition">About</a>
+      <a href="#services" class="hover:text-[#14b8a6] transition">Services</a>
+      <a href="#faq" class="hover:text-[#14b8a6] transition">FAQ</a>
+      <a href="#contact" class="hover:text-[#14b8a6] transition">Contact</a>
+      <a href="/privacy-policy.html" class="hover:text-[#14b8a6] transition">Privacy Policy</a>
+      <a href="/terms-and-conditions.html" class="hover:text-[#14b8a6] transition">Terms &amp; Conditions</a>
+      <a href="/refund-policy.html" class="hover:text-[#14b8a6] transition">Refund Policy</a>
+    </nav>
+    <div class="text-center text-gray-500 text-sm">
+      &copy; 2024 Para Tube. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</body>
+</html>
